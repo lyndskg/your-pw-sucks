@@ -342,78 +342,64 @@ Write unit tests to validate the correctness and reliability of the password str
 
 <p align="right">(<a href="#yt">back to top</a>)</p>
 
----------------------
-<a name="todo"></a>
-### <ins>*To-Do List</ins>:*
-1. **Project Setup:**
-> - Choose the tech stack for the web app or desktop app.
-> - Set up the development environment and install necessary dependencies.
-> - Create a new project repository and initialize version control (e.g., `Git`).
-2. **Basic Conversion Functionality:**
-> - Implement the front-end user interface for inputting YouTube video links and selecting audio formats.
-> - Set up the back-end to handle YouTube API requests and download audio in `WAV` format.
-> - Test the basic conversion functionality and ensure files are saved in the specified location.
-3. **Expanding Audio Formats and Manual Metadata Editing:**
-> - Add support for converting audio to lossless compression (M4A) and lossy compression (`MP3`) formats.
-> - Implement a user interface for users to specify the destination folder for the downloaded audio files.
-> - Create a metadata editing interface for users to manually modify artist, title, genre, and other details.
-4. **AI/ML Integration and Advanced Features:**
-> - Research and select suitable AI/ML models for metadata generation or retrieval.
->> - Integrate the AI/ML models into the application to automatically fetch or generate metadata.
-> - Enhance the UI/UX design for a more intuitive and visually appealing user experience.
-> - Implement advanced features such as batch processing and playlist support.
-5. **Testing, Bug Fixing, and Performance Optimization:**
-> - Conduct thorough testing of the application's functionality and user interfaces.
->- Identify and fix any bugs or issues that arise during testing.
-> - Optimize the application's performance and ensure efficient resource usage.
-6. **Documentation and Deployment:**
-> - Prepare comprehensive documentation for users and developers, including installation guides and API references.
-> - Deploy the web app to a reliable server or hosting platform for public access.
-> - Package the desktop app as a `.dmg` file for macOS and an installer for Windows.
-&nbsp;
-
-
-<p align="right">(<a href="#yt">back to top</a>)</p>
 
 ---------------------
 
 <a name="impl"></a>
 ## Project Implementation Guide
 
-1. **<ins>Getting Started</ins>:**
-> - Choose the tech stack for the web or desktop app and set up the development environment.
->   - Install required dependencies.
-> - Create the basic web or desktop app structure.
->  - Create the front-end skeleton with the necessary components, routing (*i.e.*, for web apps), and basic styling.
->  - Set up the back-end to handle API requests, including YouTube API and AI/ML integration (if applicable).
-2. **<ins>YouTube Audio Conversion</ins>:**
-> - Implement code to fetch and download YouTube audio using FFmpeg for audio conversion.
-> - Utilize `FFmpeg`(or `FFmpeg.js` for web apps) to perform audio conversion to `WAV`, `M4A`, or `MP3` formats.
-3. **<ins>Metadata Editing</ins>:**
-> - Develop the front-end user interface for manual metadata editing, enabling users to modify track details.
-> - If integrating AI/ML, prepare the back-end to connect with AI/ML models and retrieve or generate metadata.
-4. **<ins>AI/ML Integration</ins>:**
-> - Research and select appropriate AI/ML models for metadata generation or retrieval.
-> - Implement the connection between the back-end and AI/ML models for seamless metadata integration.
-5. **<ins>UI/UX Enhancement</ins>:**
-> - Design a user-friendly interface with proper error handling and progress indicators.
-> - Enhance the user interface with CSS and responsive design to create a visually appealing and user-friendly application.
-> - Add support for batch processing and playlist downloads.
-> - Improve the user experience by providing real-time feedback, smooth transitions, and intuitive interactions.
-6. **<ins>Advanced Features</ins>:**
-> - Implement batch processing functionality for users to convert multiple YouTube audio tracks at once.
-> - Enable playlist support for downloading audio from an entire YouTube playlist.
-7. **<ins>Testing and Bug Fixing</ins>:**
-> - Conduct thorough testing for the web or desktop app on different devices and browsers.
-> - Identify and fix any bugs or issues that arise during testing.
-8. **<ins>Performance Optimization</ins>:**
-> - Optimize the application for performance and responsiveness, ensuring efficient resource utilization.
-9. **<ins>Documentation</ins>:**
-> - Prepare comprehensive documentation, including a user guide, installation instructions, and API documentation.
-> - Provide clear and concise explanations for each feature and functionality.
-10. **<ins>Deployment</ins>:**
-> - Deploy the web app to a reliable server or hosting platform for public access.
-> - Package the desktop app as a `.dmg` file for macOS and an installer for Windows.
+__1. <ins>Set Up Development Environment</ins>:__ 
+> - Install `Python`: Download and install the latest version of Python from the official website (https://www.python.org/).
+> - Install `PyCharm`: Download and install PyCharm Community Edition or Professional Edition from JetBrains website (https://www.jetbrains.com/pycharm/).
+> - Set Up `Git`: Install Git for version control and collaboration. You can download Git from https://git-scm.com/.
+
+__2. <ins>Create a New Project</ins>:__ 
+> - Open PyCharm and create a new Python project for `your-pw-sucks`.
+> - Choose a project name and location, and select the Python interpreter installed on your system.
+
+__3. <ins>Design User Interface (UI)</ins>:__ 
+> - Use `PyQt` or `Tkinter` to design the graphical user interface (GUI) for the password analysis program.
+> - Create input fields for users to enter passwords and customize analysis settings (e.g., minimum length, character requirements).
+> - Design feedback mechanisms to display analysis results, including strengths, weaknesses, and recommendations.
+
+__4. <ins>Implement Password Strength Metrics</ins>:__ 
+> - Develop algorithms and functions to evaluate password strength based on various metrics (length, character diversity, entropy, etc.).
+> - Write unit tests to validate the correctness and reliability of the password strength evaluation algorithms.
+
+__5. <ins>Integrate with Password Crackers</ins>:__ 
+> - ntegrate password-cracking libraries or tools (e.g., `John the Ripper`) to simulate real-world password cracking attempts.
+> - Implement functionality to execute password-cracking attempts using the integrated tool and analyze the results.
+
+
+__6. <ins>Implement Feedback Mechanisms</ins>:__ 
+> - Develop components to provide actionable feedback to users on the strength and security of their passwords.
+> - Generate detailed reports summarizing the analysis results and recommendations for improving password security.
+
+__7. <ins>Ensure Security and Privacy</ins>:__ 
+> - Implement robust security measures to protect user passwords, analysis results, and sensitive data stored or transmitted by the program.
+> - Employ encryption, secure storage practices, and access controls to ensure user privacy and data security.
+
+__8. <ins>Testing and Quality Assurance</ins>:__ 
+> - Conduct thorough testing of the password analysis program to identify and fix any bugs, errors, or vulnerabilities.
+> - Perform unit tests, integration tests, and system tests to verify the functionality, reliability, and performance of the program under various scenarios.
+
+__9. <ins>Documentation and User Guides</ins>:__ 
+> - Create comprehensive documentation for the password analysis program, including installation instructions, user guides, and API references.
+> - Provide clear and concise documentation on how to use the program, customize analysis settings, and interpret analysis results.
+
+__10. <ins>Continuous Improvement and Maintenance</ins>:__ 
+> - Gather user feedback and insights to identify areas for improvement and new feature requests.
+> - Iterate on the password analysis program based on feedback and lessons learned from real-world usage.
+> - Implement continuous integration and deployment (CI/CD) pipelines to automate testing, deployment, and updates for the program.
+
+__11. <ins>Release and Deployment</ins>:__ 
+> - Prepare the password analysis program for release by addressing any remaining issues and ensuring readiness for deployment.
+> - Package the program for distribution, following platform-specific guidelines and packaging standards.
+> - Publish the program on appropriate platforms or repositories for users to download, install, and use.
+
+__12. <ins>Maintenance and Support</ins>:__ 
+> - Provide ongoing maintenance and support for the password analysis program, including bug fixes, security updates, and feature enhancements.
+> - Monitor user feedback, address user inquiries, and proactively respond to emerging security threats or vulnerabilities.
 
 
 <p align="right">(<a href="#yt">back to top</a>)</p>
@@ -424,34 +410,14 @@ Write unit tests to validate the correctness and reliability of the password str
 
 <a name="i"></a>
 ### Input: 
-> - YouTube video link
->   - Users input the link to the YouTube video they want to convert.
-> - Selected audio format
->   - Users select the desired audio format (`WAV`, `M4A`, `MP3`) for the conversion.  
-> - Destination folder
->   - Users choose the location on their device where the converted audio file will be saved.
-> - Metadata details (*optional*)
->   - Users manually input artist, title, genre, album, and other details for the audio track. 
->
+
 <a name="o"></a>
 ### Output: 
-> - Converted audio file
->   - The application outputs the audio file in the selected format (WAV, M4A, MP3).
-> - Edited metadata (*optional*)
->   - If manual metadata editing is performed, the edited metadata is included in the output audio file.
-> - AI/ML-Generated Metadata (*optional*)
->   - If AI/ML assistance is used, the AI/ML-generated metadata is included in the output audio file.
+
 
 <a name="err"></a>
 #### __<ins>*Error Handling*</ins>:__
-> - **<ins>Invalid YouTube Link</ins>:**
->   -  Display an error message if the user inputs an invalid YouTube video link.
-> - **<ins>Unsupported Format</ins>:**
->   - Alert the user if the selected format is not supported or unavailable for conversion.
-> - **<ins>Conversion Errors</ins>:**
->   - Inform the user if any issues arise during the conversion process.
-> - **<ins>AI/ML Errors (*optional*)</ins>:**
->   - Handle errors gracefully if AI/ML metadata generation encounters problems.
+
 
 &nbsp;
 
@@ -460,32 +426,9 @@ Write unit tests to validate the correctness and reliability of the password str
 <a name="uiux"></a>
 ## UI/UX
 
-> The UI/UX should be intuitive and straightforward, featuring a simple input field for the YouTube video link and options for choosing the desired audio format and metadata editing. 
->
-> Users can choose between different audio formats and set the destination folder. 
->
-> Provide feedback on the conversion progress and allow users to view and edit metadata before downloading.
-
-
 ### <ins>UI/UX Implementation Details</ins>:
-1. **Landing Page:**
-  > - The landing page features a simple and clean design with a prominent input field for the YouTube video link.
-  > - Clear and concise instructions guide users on how to use the application to convert and download audio tracks.
-  > - Users are presented with audio format options (`WAV`, `M4A`, `MP3`) and a browse button to select the destination folder.
-2. **Conversion Progress:**
-  > - During the conversion process, a progress bar or spinner informs users of the conversion status.
-  > - Real-time updates show the percentage completed and the remaining time for larger files.
-3. **Metadata Editing Interface:**
-  > - The metadata editing interface provides text input fields for artist, title, genre, album, and other relevant details.
-  > - Where applicable, dropdown menus with suggested options for artist and genre are available for user convenience.
-  > - Users can preview the current metadata and compare it with AI/ML-generated suggestions (if applicable) before finalizing.
-4. __AI/ML Metadata Generation (*Optional*):__
-  > - Users are presented with an option to enable AI/ML assistance for metadata generation or retrieval.
-  > - If selected, the AI/ML-generated metadata suggestions are displayed for review and confirmation by the user.
 
 5. **Error Handling:**
-> - Clear error messages and alerts guide users in case of invalid URLs, unsupported formats, or other issues.
-> - Adequate error handling ensures a seamless user experience and helps users understand and resolve any problems.
 
 
 <p align="right">(<a href="#yt">back to top</a>)</p>
@@ -494,37 +437,6 @@ Write unit tests to validate the correctness and reliability of the password str
 ---------------------
 <a name="flow"></a>
 ## Basic Workflow Guide
-
-1. **User Inputs YouTube Video Link:**
-  > - The user accesses the `ytconv3rt3r` application and inputs the YouTube video link they want to convert.
-2. **Select Desired Audio Format and Destination Folder:**
-  > - The user selects the desired audio format (`WAV`, `M4A`, or `MP3`) for the conversion.
-  > - The user chooses the destination folder where the converted audio file will be saved.
-3. **Audio Conversion and Download:**
-  > - The application sends the YouTube video link to the back-end, which uses the YouTube API to fetch the video data.
-  > - The back-end initiates the audio conversion process using `FFmpeg`, converting the audio to the selected format.
-  > - The converted audio file is downloaded and saved to the specified destination folder.
-4. __Manual Metadata Editing (*Optional*):__
-  > - If the user wants to edit metadata manually, they can access the metadata editing interface.
-  > - The user can modify artist, title, genre, and other details for the audio track.
-5. __AI/ML Metadata Generation (*Optional*):__
-  > - For users who choose to use AI/ML assistance, the application automatically generates or retrieves metadata for the audio track.
-  > - AI/ML models analyze the audio content and provide relevant metadata suggestions.
-6. **Feedback and Download Completion:**
-  > - The application provides feedback on the conversion progress and notifies the user when the download is complete.
-  > - If AI/ML-generated metadata is used, the user can review and confirm the suggested metadata before downloading.
-7. __Advanced Features: Batch Processing and Playlist Support (*Optional*):__
-  > - The user can choose to process multiple YouTube video links simultaneously in batch mode.
-  > - Playlist support allows the user to download the audio tracks from an entire YouTube playlist.
-8. **Testing, Bug Fixing, and Optimization:**
-  > - The application undergoes extensive testing to identify and fix any bugs or issues.
-  > - Performance optimizations are applied to ensure efficient and smooth operation.
-9. **Documentation and Deployment:**
-  > - Comprehensive documentation, including installation guides and API references, is prepared for users and developers.
-  > - The web app is deployed to a reliable server or hosting platform for public access.
-  > - The desktop app is packaged as a `.dmg` file for macOS and an installer for Windows.
-10. **Project Completion and Release:**
-  > - The `ytconv3rt3r` project is completed and released to the public, providing users with a powerful and user-friendly tool for converting and downloading YouTube audio tracks in various formats with optional AI/ML-enhanced metadata generation.
 
 &nbsp; 
 <p align="right">(<a href="#yt">back to top</a>)</p>
