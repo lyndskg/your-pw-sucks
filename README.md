@@ -442,44 +442,44 @@ Additionally, some IDEs may have community or professional editions, so be sure 
 <a name="map"></a>
 ## Roadmap
 
-1. Project Definition:
+1. Project Definition: (20 hours)
 > - Clarify the specific goals and objectives of the Password Strength Analyzer project, including the target audience and key features to be implemented.
-2. Research and Analysis:
+2. Research and Analysis: (40 hours)
 > - Conduct in-depth research on password security best practices, password strength metrics, and common password-cracking techniques.
 > - Analyze existing password analysis tools and libraries to identify their strengths, weaknesses, and potential integration opportunities.
-3. Technology Selection:
+3. Technology Selection: (15 hours)
 > - Choose the appropriate programming languages, frameworks, and tools for developing the password analysis program, considering factors such as platform compatibility, performance, and ease of development.
 > - Decide on the GUI framework for designing the user interface (e.g., PyQt, Tkinter) and the password-cracking library/tool to integrate (e.g., John the Ripper).
-4. Design Phase:
+4. Design Phase: (30 hours)
 > - Design the user interface (UI) for the password analysis program, focusing on usability, simplicity, and clarity.
 Create wireframes or mockups to visualize the UI layout, user interaction flow, and feedback mechanisms.
-5. Algorithm Development:
+5. Algorithm Development: (60 hours)
 > - Develop algorithms and functions to evaluate password strength based on defined metrics, such as length, character diversity, entropy, and avoidance of common patterns.
 Write unit tests to validate the correctness and reliability of the password strength evaluation algorithms.
-6. Integration with Password Crackers:
+6. Integration with Password Crackers: (60 hours)
 > - Integrate the password analysis program with the selected password-cracking library/tool (e.g., John the Ripper) to simulate real-world password cracking attempts.
 > - Implement functionality to execute password-cracking attempts using the integrated tool and analyze the results to assess password security.
-7. Feedback Mechanisms:
+7. Feedback Mechanisms: (30 hours)
 > - Develop components to provide actionable feedback to users on the strength and security of their passwords.
 > - Generate detailed reports summarizing the analysis results and recommendations for improving password security.
-8. Security and Privacy Measures:
+8. Security and Privacy Measures: (30 hours)
 > - Implement robust security measures to protect user passwords, analysis results, and sensitive data stored or transmitted by the program.
 > - Employ encryption, secure storage practices, and access controls to ensure user privacy and data security.
-9. Testing and Quality Assurance:
+9. Testing and Quality Assurance: (45 hours)
 > - Conduct rigorous testing of the password analysis program to identify and fix any bugs, errors, or vulnerabilities.
 > - Perform unit tests, integration tests, and system tests to verify the functionality, reliability, and performance of the program under various scenarios.
-10. Documentation and User Guides:
+10. Documentation and User Guides: (20 hours)
 > - Create comprehensive documentation for the password analysis program, including installation instructions, user guides, and API references.
 > - Provide clear and concise documentation on how to use the program, customize analysis settings, and interpret analysis results.
-11. Continuous Improvement and Maintenance:
+11. Continuous Improvement and Maintenance: (Ongoing)
 > - Gather user feedback and insights to identify areas for improvement and new feature requests.
 > - Iterate on the password analysis program based on feedback and lessons learned from real-world usage.
 > - Implement continuous integration and deployment (CI/CD) pipelines to automate testing, deployment, and updates for the program.
-12. Release and Deployment:
+12. Release and Deployment: (20 hours)
 > - Prepare the password analysis program for release by addressing any remaining issues and ensuring readiness for deployment.
 > - Package the program for distribution, following platform-specific guidelines and packaging standards.
 > - Publish the program on appropriate platforms or repositories for users to download, install, and use.
-13. Maintenance and Support:
+13. Maintenance and Support: (Ongoing)
 > - Provide ongoing maintenance and support for the password analysis program, including bug fixes, security updates, and feature enhancements.
 > - Monitor user feedback, address user inquiries, and proactively respond to emerging security threats or vulnerabilities.
 
