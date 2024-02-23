@@ -22,6 +22,12 @@ your-pw-sucks/
 │   ├── api_reference.md            # API reference documentation
 │   └── ...                         # Additional documentation files as needed
 │
+├── venv/                           # Virtual environment directory
+│   ├── bin/
+│   ├── include/
+│   ├── lib/
+│   └── ...  
+│
 ├── requirements.txt                # File listing project dependencies for easy installation
 ├── LICENSE                         # File containing the project's license information
 ├── BuildNotes.txt  
