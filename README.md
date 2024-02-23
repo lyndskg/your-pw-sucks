@@ -195,46 +195,49 @@
 <a name="view"></a>
 ## Project Overview 
 
-`ytconv3rt3r` is a versatile and user-friendly application that allows users to convert and download YouTube audio tracks into various audio file formats &mdash; including uncompressed audio (WAV), lossless compression (M4A), and lossy compression (MP3). 
+`your-pw-sucks` is a a comprehensive password analysis program that evaluates the strength and security of user-provided passwords. 
 
-Users will have the option to edit metadata for each audio track &mdash; including artist, title, genre, and other relevant details (which is especially crucial for users who use mixing/DJing software like `RekordBox` or `Serato`). 
-
-&nbsp;
-> - To enhance the user experience, an AI/ML-enhanced version of the project will be developed, which will automatically source and generate the correct metadata for each YouTube link.
->   
-> - Additionally, users can edit metadata for each audio track, with the option of AI/ML assistance for automatic metadata retrieval or generation. 
+The program aims to empower users to create stronger, more secure passwords by providing detailed feedback and recommendations based on industry best practices and advanced analysis algorithms.
 
 &nbsp;
-
-The project aims to cater to both web and desktop users, supporting both macOS and Windows operating systems.
-
-
 
 ---------------------
 
 <a name="obj"></a>
-### <ins>Objectives</ins>:
+### <ins>Key Objectives</ins>:
 
-1. __<ins>Seamless Audio Conversion Experience</ins>:__
-> - The primary objective of the `ytconv3rt3r` project is to provide users with a seamless and hassle-free experience when converting YouTube audio tracks into various audio formats.
-> - The application should be easy to use, with a straightforward process for inputting YouTube video links and selecting desired audio formats.
-> - Users should be able to initiate the conversion process with minimal effort and receive high-quality audio output promptly.
-2. **<ins>Metadata Editing with or without AI/ML Assistance</ins>:**
-> - Another key objective is to enable users to edit metadata associated with the converted audio tracks.
->> - Metadata includes information such as track title, artist name, album name, genre, and cover art.
-> - Users should have the option to manually edit this metadata to ensure accurate and personalized information.
-> - Additionally, the project aims to explore the integration of AI/ML technologies to assist users in automatically retrieving or generating metadata for the audio tracks, saving them time and effort.
-3. **<ins>AI/ML Model for Metadata Retrieval or Generation</ins>:**
-> - As part of the project's innovation, the development team aims to build and integrate an AI/ML model that can analyze audio content and retrieve or generate relevant metadata automatically.
->> - This AI/ML model would use techniques such as audio fingerprinting, natural language processing, and machine learning algorithms to identify key metadata details from the audio content itself or external sources.
-> - By providing AI/ML assistance, the application can streamline the metadata editing process and enhance the overall user experience.
-4. **<ins>Support for Web and Desktop Applications</ins>:**
-> - The `ytconv3rt3r` project aims to be versatile and accessible to a wide range of users.
->> - To achieve this, the team plans to develop two versions of the application: a web-based version that users can access through their internet browsers, and a desktop application for macOS and Windows operating systems.
->> - This approach allows users to choose the platform that best suits their preferences and requirements.
-5. **<ins>Cross-Platform Compatibility</ins>:**
-> - In addition to supporting both web and desktop applications, cross-platform compatibility is a crucial objective of the project.
-> - The team will ensure that the application functions smoothly on various operating systems and web browsers, allowing users to access and use it regardless of their chosen platform.
+1. __<ins>User Interface Development</ins>:__
+> - Design and implement an intuitive and user-friendly interface using a graphical user interface (GUI) framework like `PyQt` or `Tkinter`.
+> - Include input fields for users to enter passwords and customizable options for adjusting analysis settings (e.g., minimum length, character requirements).
+> - Display analysis results in a clear and understandable format, highlighting strengths and weaknesses of the password.
+2. **<ins>Password Strength Metrics</ins>:**
+> - Implement algorithms to assess various aspects of password strength, including:
+>> - Length: Ensure passwords meet a minimum length requirement (configurable by the user).
+>> - Character Diversity: Check for the presence of different character types (uppercase, lowercase, numbers, special characters) and assess their distribution.
+>> - Avoidance of Common Patterns: Detect common patterns, sequences, or dictionary words in passwords that could make them vulnerable to attacks.
+>> - Entropy Calculation: Calculate the entropy of passwords to estimate their randomness and unpredictability.
+>> - Common Substitution Patterns: Identify and penalize passwords that use common character substitutions to create the illusion of complexity.
+>> - Repetition and Sequential Characters: Detect and flag repeated characters, consecutive numbers, or sequential keyboard patterns in passwords.
+>> - Check Against Known Breached Passwords: Compare passwords against known breached password lists to warn users if their password has been compromised.
+>> - Custom Rules and Policies: Allow users to define custom password strength rules and policies based on their specific security requirements.
+3. **<ins>Integration with Password Crackers</ins>:**
+> - Integrate password-cracking libraries or tools (e.g., `John the Ripper`) to simulate real-world password cracking attempts.
+> - Analyze crack results to provide insights into the effectiveness of the password and its susceptibility to common attack methods.
+> - Utilize the results to provide tailored feedback and recommendations for improving password security.
+4. **<ins>Feedback and Reporting</ins>:**
+> - Provide detailed feedback to users on the strength and security of their passwords, highlighting areas for improvement.
+> - Generate comprehensive reports summarizing the analysis results, including metrics such as password complexity score, entropy, and vulnerability assessment.
+> - Offer actionable recommendations and best practices for creating stronger, more resilient passwords.
+5. **<ins>Security and Privacy</ins>:**
+> - Implement robust security measures to protect user passwords and analysis results, including encryption and secure storage practices.
+> - Ensure compliance with privacy regulations and standards to safeguard user data and maintain user trust.
+6. **<ins>Customization and Configuration</ins>:**
+> - Allow users to customize analysis settings and thresholds to align with their specific security needs and preferences.
+> - Provide options for adjusting sensitivity levels and trade-offs between security and usability, accommodating users with varying levels of security expertise.
+7.**<ins>Documentation and Testing</ins>:**
+> - Create comprehensive documentation, including installation guides, user manuals, and API references.
+> - Conduct thorough testing across different operating systems, environments, and use cases to ensure the program's reliability, accuracy, and performance.
+> - Implement continuous integration and deployment (CI/CD) pipelines to automate testing and ensure the timely delivery of updates and improvements.
 
 &nbsp;
 
