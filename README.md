@@ -263,179 +263,33 @@ The program aims to empower users to create stronger, more secure passwords by p
 <a name="stackz"></a>
 ### Currently Used Tech Stack(s): 
 
-> Web:
->
-> macOS:
->
-> Windows:
 
-__1. <ins>Front-end</ins>: (*User Interface*)__ 
-> - `React`: For building the web frontend, providing a fast and interactive user experience.
-> - `Qt for WebAssembly`: Use Qt's framework to create a native-like experience for the web app with WebAssembly support.
-> - 
-__2. <ins>Backend</ins>: (Data Processing and Business Logic)__
-> - `Python`: For handling backend logic, data processing, and integrating with web APIs.
-> -  `C++ with Qt`: For advanced backend functionalities and integration with the frontend using `Qt`.
+__1. <ins>Programming Language</ins>:__ 
+> - `Python`: Python is a versatile and widely used language with extensive libraries and frameworks that are well-suited for developing the backend logic, algorithm implementation, and integration with password-cracking tools.
 
-__3. <ins>Database</ins>: (Data Storage)__
-> - `SQLite`: For lightweight, serverless, and easy-to-use data storage for both the web app and desktop app.
+__2. <ins>GUI Framework</ins>:__
+> - `PyQt`: PyQt is a powerful GUI framework for Python that allows you to create cross-platform desktop applications with rich graphical interfaces. It provides tools for designing and developing the user interface components of the password analysis program.
 
-__4. <ins>APIs, Frameworks, and Libraries</ins>:__
-> - Flask (Python): For creating the web API and handling server-side functionality.
-> - Qt (C++): For building cross-platform desktop applications with native-like UI.
-> - YouTube Data API: To access and retrieve data from YouTube, such as video information and metadata.
+__3. <ins>Password-Cracking Integration</ins>:__
+> - `John the Ripper`: John the Ripper is a popular password-cracking tool that can be integrated into the password analysis program to simulate real-world password cracking attempts. It offers a robust set of features and algorithms for password analysis and cracking.
 
-__5. <ins>Web APIs and HTTP Communication</ins>:__
-> - Flask (Python): For creating RESTful APIs to communicate between the frontend and backend.
+__4. <ins>Testing Framework</ins>:__
+> - `Pytest`: Pytest is a flexible and easy-to-use testing framework for Python. It allows you to write simple and scalable tests to ensure the reliability and correctness of the password analysis program's functionality.
+
+__5. <ins>Version Control</ins>:__
+> - `Git`: Git is a distributed version control system that enables collaborative development and code management. It provides features for tracking changes, managing branches, and facilitating code reviews, making it essential for managing the development process of the password analysis project.
 
 
-__6. <ins>User Interface Design and Styling</ins>:__
-> - `React`: For modern and interactive UI design for the web app.
-> - `Qt (C++)`: For building native-looking UI for the desktop apps.
-
-**7. <ins>Error Handling and Logging</ins>:**
-> - `Python Logging`: For error handling and logging on the server-side (web app).
-> -  `Qt (C++)`: For error handling and logging on the desktop applications.
-  
-      
-**8. <ins>Testing, Mocking, and Quality Assurance</ins>:**
-> - `Jest` (JavaScript): For frontend testing in React.
-> - `Pytest` (Python): For backend testing in Flask.
-> - `Google Test` (C++): For testing C++ code.
->   - `Boost.Test` may be used instead?
-> - `Google Mock`
+__6. <ins>Documentation</ins>:__
+> - `Sphinx`: Sphinx is a documentation generation tool for Python projects. It allows you to create professional-looking documentation from reStructuredText files, including API references, user guides, and tutorials, to ensure comprehensive documentation of the password analysis program.
 
 
-__9. <ins>Logging and Documentation</ins>:__
-**C++**
-> - `spdlog`: A fast and efficient logging library for C++. It offers support for various logging sinks (e.g., console, file) and allows you to customize the log format.
->   - It also provides thread-safe logging capabilities.
-> - `Boost.Log`: Part of the Boost C++ Libraries collection and provides a flexible and powerful logging framework for C++.
->   - It offers multiple sinks and allows you to customize logging according to your requirements.
+**7. <ins>Continuous Integration</ins>:**
+> - `Travis CI`: Travis CI is a popular continuous integration service that integrates seamlessly with GitHub repositories. It automates the build, testing, and deployment processes of the password analysis program, enabling efficient development workflows and ensuring code quality.
 
-**Python**
-> - `logging`: Python has a built-in logging module called logging, which is powerful and versatile.
->   - It allows you to log messages with different levels of severity, customize log formats, and log to various outputs (e.g., file, console, network sockets).
-> - `Loguru`: A user-friendly and easy-to-use logging library for Python.
->   - It simplifies logging with a straightforward syntax and provides colorful output for console logging.
+**8. <ins>Deployment</ins>:**
+> - `PyInstaller`: PyInstaller is a tool for converting Python programs into standalone executables that can be run on various platforms without requiring Python to be installed. It simplifies the deployment process of the password analysis program, allowing users to easily install and run the application on their systems.
 
-**JavaScript**
-> - `Winston`: A popular logging library for `Node.js` applications.
->   - It provides flexible logging capabilities and allows you to set up custom logging transports (*e.g.*, console, file) with different log levels.
-> - `Bunyan`: An excellent logging library for `Node.js`.
->   - It focuses on providing structured and `JSON`-formatted logs, making it easier to parse and analyze logs.
-
-
-      
-__10. <ins>Desktop Application Development</ins> (*Cross-platform*):__
-> - `Qt (C++)`: For building native-like desktop applications that work on macOS and Windows with a single codebase.
-  
-       
-**10. <ins>Audio Conversion</ins>:**
-> - `FFmpeg (C++)`: For audio conversion functionalities within the desktop applications.
-      
-**11. <ins>Metadata Processing</ins>:**
-> - `Python`: For handling metadata processing and integration with AI/ML models.
-
-  
-**12. <ins>AI/ML Integration</ins>:**
-> - `Python`: For integrating AI/ML models for metadata retrieval or generation.
-   
-      
-**13. <ins>Tools/Toolkits and Channels</ins>:**
-> - `WebAssembly`: For running C++ code in web browsers to achieve native-like performance.
-> - `npm` (Node Package Manager): To manage and install frontend dependencies and packages
-> - `pip` (Python Package Manager): To manage and install Python dependencies and packages.
-      
-**14. <ins>IDEs</ins>:**
-> - `Visual Studio Code (VSCode)`: A versatile code editor with great support for `Python` and `JavaScript` development, as well as `C++` with appropriate extensions.
-> - `CLion`
-> - `PyCharm`
-
-------
-
-<a name="desk"></a>
-### Desktop Application
-
-<a name="dstack"></a>
-#### **<ins>Tech Stack</ins>:**
-> #### **Version 1**
->> - __<ins>Front-end</ins>: (*User Interface*)__ `Electron.js` for cross-platform compatibility
->> - **<ins>Back-end</ins>:** `Node.js` with `Express.js` (for handling API requests)
->> - **<ins>Libraries and APIs</ins>:** YouTube Data API, `FFmpeg` for audio conversion, AI/ML libraries (optional)
->
-> #### **Version 2**
->> 1. __<ins>Front-end</ins>: (*User Interface*)__
->>> - `React Native`: A framework for building cross-platform mobile applications with `React.js` components.
->>> - `Flutter`: A UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase.
->> 2. **<ins>Back-end</ins>:**
->>> - `Flask`: A lightweight and flexible Python web framework that can also be used for desktop app back-end functionality.
->>> - `.NET Core`: A cross-platform, open-source framework for building modern applications for Windows, macOS, and Linux.
->> 3.  **<ins>Libraries and APIs</ins>:**
->>> - `Electron Forge`: A complete toolchain to package and distribute `Electron.js` applications.
->>> - `Node.js child_process module`: For running `FFmpeg` and other command-line utilities.
->>> - `Spotify Web API`: For accessing music metadata and related information.
- 
-<a name="dIDE"></a>
-#### **<ins>Recommended IDEs</ins>:**
-> 1. __<ins>Front-end</ins>: (*User Interface*)__
->>   - <ins>Visual Studio Code</ins>: A versatile code editor suitable for `React Native` development with its wide range of extensions and `React Native`-specific tooling.
->>   - <ins>IntelliJ IDEA</ins>: A robust IDE from JetBrains that supports `Flutter` development and offers powerful code analysis and debugging tools.
-> 2. **<ins>Back-end</ins>:**
->>   - <ins>Visual Studio Code</ins>: Can be used for back-end development with `Flask` and `.NET Core`, providing a lightweight and efficient development environment.
->>   - <ins>Visual Studio</ins>: A comprehensive IDE for Windows desktop app development with `.NET Core` and `C#`.
-
-&nbsp;
-
-Remember that some IDEs may offer better integration and support for specific tech stacks, so it's essential to explore and choose the one that fits your workflow and personal preferences.
-
-Additionally, some IDEs may have community or professional editions, so be sure to consider your project's budget and needs when making a decision.
-
-&nbsp;
-
-
-<a name="web"></a>
-## Web Application
-
-<a name="wstack"></a>
-#### **<ins>Tech Stack</ins>:**
->
-> #### **Version 1**
->> - __<ins>Front-end</ins>: (*User Interface*)__ `React.js` or `Vue.js`
->> - **<ins>Back-end</ins>:** `Node.js` with `Express.js`
->> - **<ins>Libraries and APIs</ins>:** YouTube Data API, `FFmpeg` for audio conversion, AI/ML libraries (*optional*)
->
-> #### **Version 2**
->> 1. __<ins>Front-end</ins>: (*User Interface*)__
->>> - `Angular`: A popular framework for building robust web applications.
->>> - `Ember.js`: A framework for creating ambitious web applications with a strong focus on convention over configuration.
->>> - `Svelte`: A lightweight framework that compiles components to highly optimized vanilla JavaScript.
->>
->> 2. **<ins>Back-end</ins>:**
->>> - `Ruby on Rails`: A powerful and beginner-friendly framework for building web applications using the Ruby programming language.
->>> - `Django`: A high-level Python web framework that promotes rapid development and clean, pragmatic design.
->>> - `Flask`: A lightweight and flexible Python web framework that provides the essentials for building a web application.
->>
->> 3.  **<ins>Libraries and APIs</ins>:**
->>> - `FFmpeg.js`: A pure JavaScript port of FFmpeg for client-side audio conversion.
->>> - `axios`: A promise-based HTTP client for making API requests.
->>> - `MusiXmatch API`: For accessing music metadata, lyrics, and other related data.
-
-<a name="wIDE"></a>
-#### **<ins>Recommended IDEs</ins>:**
->
-> 1. __<ins>Front-end</ins>: (*User Interface*)__
->>   - **<ins>Visual Studio Code</ins>:** A popular and lightweight code editor with strong community support and numerous extensions for `Angular`, `Ember.js`, and `Svelte` development.
->>   - **<ins>WebStorm</ins>:** A powerful IDE specifically designed for web development with excellent support for `Angular`, `Ember.js`, and `Svelte`.
->
-> 2.  **<ins>Back-end</ins>:**
->>   - **<ins>Visual Studio Code</ins>:** An excellent choice for back-end development with `Ruby on Rails`, `Django`, and `Flask` due to its versatility and extensive plugin support.
->>   - **<ins>PyCharm</ins>:** A specialized IDE for Python development that provides advanced tools for working with `Django` and `Flask` projects.
-
-
-&nbsp;
-
-<p align="right">(<a href="#yt">back to top</a>)</p>
 
 ---------------------
 
