@@ -1,6 +1,3 @@
-# your-pw-sucks
-pw security checker/analyzer by attacking w john the ripepr and shit
-
 <a name="pw"></a>
 
 <h1 align="center">your-pw-sucks</h1>
