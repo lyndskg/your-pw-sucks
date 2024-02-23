@@ -1,0 +1,28 @@
+your-pw-sucks/
+│
+├── src/                            # Contains the source code for the project
+│   ├── main.py                     # The main entry point of the program
+│   ├── password_analyzer.py        # Module containing the password analysis logic
+│   └── gui/                        # Directory for GUI-related code
+│       ├── __init__.py
+│       ├── main_window.py          # Module defining the main application window
+│       └── resources/              # Directory for GUI resources such as icons and styles
+│           ├── icons/
+│           │   └── ...
+│           └── styles/
+│               └── ...
+│
+├── tests/                          # Contains the unit tests for the project
+│   ├── test_password_analyzer.py   # Unit tests for the password analysis module
+│   └── ...                         # Additional test files as needed
+│
+├── docs/                           # Contains documentation for the project
+│   ├── index.md                    # Main documentation index file
+│   ├── user_guide.md               # User guide documentation
+│   ├── api_reference.md            # API reference documentation
+│   └── ...                         # Additional documentation files as needed
+│
+├── requirements.txt                # File listing project dependencies for easy installation
+├── LICENSE                         # File containing the project's license information
+├── BuildNotes.txt  
+└── README.md                       # Main project README file containing an overview of the project and instructions for getting started
