@@ -1,0 +1,5 @@
+2/23/24
+> - (3:37PM CST) Beginning the project after settling upon a high-level roadmap and project implementation guide.
+>> - First objective is to try and define the project scope and objectives, including the features and functionalities I seek to implement, as well as the target audience for the program (and their specific needs and requirements).
+>> - Next, I need to do the due diligence and research canonical best practices vis-à-vis password security, password strength metrics, and common password-cracking techniques.
+>> - I also ought to decide upon a tech stack and set up a proper development environment. I've settled on PyCharm for now as my IDE of choice, but this may change depending on how well it suits my project needs.
